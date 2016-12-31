@@ -25,7 +25,21 @@ Each submitted instance would allocate 1 CPU (`-n 1`), 1GB of RAM (`-R "rusage[m
 `bsub` is the submission command for the HPCC, so if the above snippet is wrapped in bash script `submit11.sh`, than all you need is to run it "locally" `sh submit11.sh`. No need to `bsub submit11.sh`!!!
 We covered here one important use case scenario for the HPCC use, that would be it.
 
+Array fo jobs example.
+The following example does exactly what you'd expect.
 
+{% highlight bash %}
+#BSUB -n 4
+#BSUB -W 8:0
+#BSUB -R rusage[mem=1024]
+#BSUB -J "mcmc[1-7]"
+#BSUB -R "span[hosts=1]"
+#BSUB -o logs/out.%J.%I
+#BSUB -e logs/err.%J.%I
+./program input_$LSB_JOBINDEX.dat
+{% endhighlight %}
+
+It requests 4 cores per job-item on a single host with memory requirements 1GB to last for up to 8 hours each. I checked and it appeared that each of the 7 job-items haad its own host, but 4 cores were resereved on each for this array.
 
 
 PS extra bash snippets:
