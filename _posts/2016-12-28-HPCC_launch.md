@@ -59,3 +59,12 @@ seq 3 1 5; seq 8 2 15
 would generate the following sequence: `3 4 5 8 10 12 14`.
 
 
+# HPCC GPU usage
+
+Compiling `-lcuda` linked code requires CUDA enabled runtime, thus comillation is possibly only on a GPU-enalbed machine itself:
+```bsub -q gpu -R "rusage[mem=1024,ngpus_excl_p=1]" -o "./xxx.out" -e "./xxx.err"< load_modules.sh
+```
+Command below would do the job, assuming `load_modules.sh` loads modules (gcc, CUDA) and compiles necessary code.
+
+
+
