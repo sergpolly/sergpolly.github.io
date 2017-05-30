@@ -68,5 +68,7 @@ Compiling `-lcuda` linked code requires CUDA enabled runtime, thus comillation i
 
 Command below would do the job, assuming `load_modules.sh` loads modules (gcc, CUDA) and compiles necessary code.
 
+Requesting interactive GPU job:
 
+```bsub -q gpu -R "rusage[mem=1024,ngpus_excl_p=1]" -Is bash```
 
