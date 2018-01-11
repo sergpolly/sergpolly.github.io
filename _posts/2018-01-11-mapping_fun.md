@@ -12,7 +12,11 @@ Interesting consequences of such mistake:
 
  - only 40'000 or so read-pairs were mapped out of ~0.5 billion incoming short reads
  - resultant pairs file, thus, mostly made up of identical lines:
-<img src="/media/unmapped_pairs.png" width="50%" align="middle"/>
+<center>
+	<img src="/media/unmapped_pairs.png" width="50%" align="middle"/>
+</center>
  - uncompressed file with these pairs was still noth of 6GB, see `xxx.pairs`
  - but the coolest thing is that `lz4` compressed pairs file was just 85MB:
-<img src="/media/unmapped_compressed.png" width="70%" align="middle"/>
+<center>
+	<img src="/media/unmapped_compressed.png" width="100%" align="middle"/>
+</center>
