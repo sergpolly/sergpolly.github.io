@@ -12,8 +12,7 @@ Interesting consequences of such mistake:
 
  - only 40'000 or so read-pairs were mapped out of ~0.5 billion incoming short reads
  - resultant pairs file, thus, mostly made up of identical lines:
-
-<!-- ![useful image](/media/unmapped_pairs.png) -->
-<!-- <a href="https://sergpolly.github.io/jekyll/update/2018/01/11/mapping_fun.html"> -->
-<img src="/media/unmapped_pairs.png" width="50%"/>
-<!-- </a> -->
+<img src="/media/unmapped_pairs.png" width="50%" align="middle"/>
+ - uncompressed file with these pairs was still noth of 6GB, see `xxx.pairs`
+ - but the coolest thing is that `lz4` compressed pairs file was just 85MB:
+<img src="/media/unmapped_compressed.png" width="70%" align="middle"/>
