@@ -14,6 +14,6 @@ Interesting consequences of such mistake:
  - resultant pairs file, thus, mostly made up of identical lines:
 
 <!-- ![useful image](/media/unmapped_pairs.png) -->
-<a href="https://sergpolly.github.io/some_image/">
-  <img src="/media/unmapped_pairs.png">
-</a>
+<!-- <a href="https://sergpolly.github.io/jekyll/update/2018/01/11/mapping_fun.html"> -->
+<img src="/media/unmapped_pairs.png">
+<!-- </a> -->
