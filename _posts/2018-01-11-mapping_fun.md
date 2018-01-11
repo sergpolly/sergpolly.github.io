@@ -15,5 +15,5 @@ Interesting consequences of such mistake:
 
 <!-- ![useful image](/media/unmapped_pairs.png) -->
 <!-- <a href="https://sergpolly.github.io/jekyll/update/2018/01/11/mapping_fun.html"> -->
-<img src="/media/unmapped_pairs.png">
+<img src="/media/unmapped_pairs.png" width="50%"/>
 <!-- </a> -->
