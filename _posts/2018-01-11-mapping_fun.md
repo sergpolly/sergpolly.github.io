@@ -10,5 +10,7 @@ turned out I mapped mouse-NGS data to human genome hg19 (reason being - stupid "
 
 Interesting consequences of such mistake:
 
- - only 40'000 or so, read-pairs were mapped out of ~0.5 billion incoming short reads
- - resultant 
+ - only 40'000 or so read-pairs were mapped out of ~0.5 billion incoming short reads
+ - resultant pairs file, thus, mostly made up of identical lines:
+
+![useful image](../media/unmapped_pairs.png)
