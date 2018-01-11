@@ -13,4 +13,7 @@ Interesting consequences of such mistake:
  - only 40'000 or so read-pairs were mapped out of ~0.5 billion incoming short reads
  - resultant pairs file, thus, mostly made up of identical lines:
 
-![useful image](../media/unmapped_pairs.png)
+<!-- ![useful image](/media/unmapped_pairs.png) -->
+<a href="https://sergpolly.github.io/some_image/">
+  <img src="/media/unmapped_pairs.png">
+</a>
